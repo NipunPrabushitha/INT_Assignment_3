@@ -7,8 +7,167 @@
     <meta name="author" content="ijse">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>case01</title>
+    <link rel="stylesheet" href="Assests/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+        .Rec{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body>section:nth-child(1){
+            background: red;
+            left: 0;
+        }
+
+        body>section:nth-child(2){
+            background: green;
+            right: 0;
+        }
+
+        body>section:nth-child(3){
+            background: goldenrod;
+            left: 0;
+            bottom: 0;
+        }
+
+        body>section:nth-child(4){
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        .cir{
+            background: white;
+            width: 12vw;
+            height: 12vw;
+            border-radius: 200px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .rec{
+            background: red;
+            height: 5vw;
+            width: 5vw;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>section:nth-child(5){
+            background: white;
+            width: 14vw;
+            height: 14vw;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>section:nth-child(5)>div{
+            background: red;
+            width: 7vw;
+            height: 7vw;
+            position: absolute;
+            border-radius: 200px;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .corner {
+            background: white ;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 200px;
+            position: absolute;
+        }
+
+        #corner1{
+            top: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+
+        #corner2{
+            top: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+
+        #corner3{
+            bottom: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+
+        #corner4{
+            bottom: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+
+        #corner5{
+            left:0;
+            right: 0;
+            top: calc(-15vw/2);
+            margin: auto;
+        }
+
+        #corner6{
+            left:0;
+            right: 0;
+            bottom: calc(-15vw/2);
+            margin: auto;
+        }
+
+    </style>
 </head>
 <body>
+<section class="Rec">
+    <div class="cir">
+        <div class="rec"></div>
+    </div>
+</section>
 
+<section class="Rec">
+    <div class="cir">
+        <div class="rec"></div>
+    </div>
+</section>
+
+<section class="Rec">
+    <div class="cir">
+        <div class="rec"></div>
+    </div>
+</section>
+
+<section class="Rec">
+    <div class="cir">
+        <div class="rec"></div>
+    </div>
+</section>
+<section>
+    <div></div>
+</section>
+
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
 </body>
 </html>
