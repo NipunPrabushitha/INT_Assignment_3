@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case04</title>
+
+    <link rel="stylesheet" href="Assests/normalize.css">
+
+    <style>
+        .card{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        #card-1{
+            background-color:whitesmoke;
+        }
+        .nav{
+            height: 50px;
+            width: 100%;
+            color: powderblue;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        #card-1>div:first-child{
+            background-color: plum;
+        }
+
+        .nav>div{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            font-size: 30px;
+            font-family: sans-serif;
+            margin: auto;
+        }
+
+        .card>div:last-child{
+            position: absolute;
+            font-size: 100px;
+            width: fit-content;
+            height: fit-content;
+            font-family: sans-serif;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #card-2{
+            background-color: plum;
+        }
+
+        #card-2>div:first-child{
+            background-color: purple;
+        }
+
+        #card-3{
+            background-color: peru;
+        }
+
+        #card-3>div:first-child{
+            background-color: palevioletred;
+        }
+
+        #card-4{
+            background-color: palegoldenrod;
+        }
+
+        #card-4>div:first-child{
+            background-color: mediumpurple;
+        }
+
+
+    </style>
+</head>
+<body>
+<section class="card" id="card-1">
+    <div class="nav" >
+        <div >Card 1</div>
+    </div>
+    <div>Hello</div>
+</section>
+
+<section class="card" id="card-2">
+    <div class="nav">
+        <div>Card 2</div>
+    </div>
+    <div>How</div>
+</section>
+
+<section class="card" id="card-3">
+    <div class="nav">
+        <div>Card 3</div>
+    </div>
+    <div>Are</div>
+</section>
+
+<section class="card" id="card-4">
+    <div class="nav">
+        <div>Card 4</div>
+    </div>
+    <div>You...?</div>
+</section>
+</body>
+</html>
